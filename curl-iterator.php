@@ -21,7 +21,6 @@ if ($name && $min == 0 || $min && $max && $curl) {
 		echo exec($curlGenerate.' > '.$name.$iterator.'.json');
 		echo PHP_EOL.'>> ITERATION: '.$iterator.'/'.$max.PHP_EOL;
 		echo PHP_EOL.'>> SAVED: '.$name.$iterator.'.json'.PHP_EOL;
-		die;
 		$iterator++;
 	}
 } else {
